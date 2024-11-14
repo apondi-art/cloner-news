@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'League Spartan', sans-serif;
+}
+
+body {
+  line-height: 1.6;
+  background-color: white;
+  color: black;
+}
+
+.container {
+  width: 85%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.header {
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.header h1 {
+  color: black;
+  margin-bottom: 20px;
+}
+
+.header h1 span {
+  color: blue;
+}
+
+.nav-tabs {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.tab {
+  padding: 10px 20px;
+  cursor: pointer;
+  background: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.tab:hover {
+  background: white;
+}
+
+.tab.active {
+  background: blue;
+  color: white;
+}
+
+.content {
+  min-height: 200px;
+}
+
+.story-card {
+  background: white;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.story-title {
+  color: gray;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1rem;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.story-title:hover {
+  color: blue;
+}
+
+.story-meta {
+  font-size: 0.9em;
+  color: gray;
+}
+
+.comments-section {
+  margin-left: 20px;
+  border-left: 2px solid blue;
+  padding-left: 15px;
+  margin-top: 10px;
+}
+
+.comment {
+  background: white;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 4px;
+}
+
+.new-content-notification {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: blue;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 4px;
+  display: none;
+  cursor: pointer;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+.new-content-notification:hover {
+  background: lightblue;
+}
+
+.loading {
+  text-align: center;
+  padding: 20px;
+  color: gray;
+  display: none;
+}
+
+.error-container {
+  margin-bottom: 20px;
+}
+
+.error-message {
+  background: lightcoral;
+  color: white;
+  padding: 10px 15px;
+  margin: 10px 0;
+  border-radius: 4px;
+  animation: slideIn 0.3s ease;
+}
+
+.footer {
+  margin-top: 40px;
+  text-align: center;
+  color: gray;
+  padding: 20px 0;
+  border-top: 1px solid #ddd;
+}
+
+/* Animation */
+@keyframes slideIn {
+  from {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HackerNews</title>
+
+    <link rel="stylesheet" href="/static/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <nav class="navbar">
+          <div class="logo">
+            <h1>Cloner<span>News</span></h1>
+          </div>
+
+          <div class="nav-tabs">
+            <button class="tab active" data-type="new">Latest Stories</button>
+            <button class="tab" data-type="job">Jobs</button>
+            <button class="tab" data-type="poll">Polls</button>
+          </div>
+        </nav>
+      </header>
+
+      <main>
+        <div id="error-container" class="error-container"></div>
+        <div id="content" class="content"></div>
+        <div id="loading" class="loading">Loading more items...</div>
+        <div id="new-content" class="new-content-notification">
+          New content available!
+        </div>
+      </main>
+
+      <footer class="footer">
+        <p>&copy; ClonerNews</p>
+      </footer>
+    </div>
+
+    <script type="module" src="/static/script.js"></script>
+  </body>
+</html>
